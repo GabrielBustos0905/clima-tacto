@@ -7,7 +7,7 @@ export default function Title(){
             <div className={style.secondCircle}></div>
             <div className={style.thirdCircle}></div>
             <div>
-                <h1>CLIMA TACTO</h1>
+                <h1>Clima Tacto</h1>
                 <p>Weather App</p>
             </div>
         </div>
