@@ -1,0 +1,110 @@
+.container {
+    width: 400px;
+    height: 65px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    border-radius: 10px;
+    background-color: #333;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(45deg, rgba(190, 45, 79, 1) 0%, rgba(138, 62, 135, 1) 20%, rgba(153, 57, 119, 1) 40%, rgba(168, 52, 103, 1) 60%, rgba(190, 45, 79, 1) 80%);
+    ;
+    background-size: 400%;
+    border-radius: 10px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+    filter: blur(20px);
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.form {
+    /* background-color: aliceblue; */
+    width: 85%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.containerInput {
+    width: 70%;
+    height: 80%;
+    background-color: #333;
+    
+    position: relative;
+}
+
+.input {
+    width: 100%;
+    color: #c9c9c9;
+    font-size: 0.9rem;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.39);
+}
+
+.input:focus {
+    outline: none;
+}
+
+.span {
+    position: absolute;
+    background: linear-gradient(90deg, #7b4397, #dc2430);
+    width: 0%;
+    height: 2px;
+    bottom: -2%;
+    left: 0;
+    transition: 0.3s;
+}
+
+.input:focus ~ .span {
+    width: 100%;
+}
+
+.buttonContainer {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    margin-left: 5px;
+}
+
+.button {
+    width: 100%;
+    height: 100%;
+    color: rgb(226, 225, 225);
+    cursor: pointer;
+}
+
+.button:hover {
+    transition: all 0.5s;
+    transform:scale(1.2);
+}

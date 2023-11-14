@@ -41,9 +41,9 @@
     backdrop-filter: blur(20px);
     filter: blur(1.5rem);
     opacity: 50%;
-    animation-name: blob;
+    /* animation-name: blob;
     animation-duration: 7s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
 }
 
 .secondCircle {
@@ -56,9 +56,9 @@
     backdrop-filter: blur(20px);
     filter: blur(1.5rem);
     opacity: 50%;
-    animation-name: blob;
+    /* animation-name: blob;
     animation-duration: 7s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
 }
 
 .thirdCircle {
@@ -72,9 +72,9 @@
     backdrop-filter: blur(20px);
     filter: blur(1.5rem);
     opacity: 50%;
-    animation-name: blob;
+    /* animation-name: blob;
     animation-duration: 10s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
 }
 
 @keyframes blob {
