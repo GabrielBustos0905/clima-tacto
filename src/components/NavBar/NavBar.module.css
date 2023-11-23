@@ -61,7 +61,7 @@
 
 .input {
     width: 100%;
-    color: #c9c9c9;
+    color: rgb(226, 225, 225);
     font-size: 0.9rem;
     background-color: transparent;
     box-sizing: border-box;
@@ -102,9 +102,10 @@
     height: 100%;
     color: rgb(226, 225, 225);
     cursor: pointer;
+    transition-duration: 500ms;
+    transition-property: var(scale);
 }
 
 .button:hover {
-    transition: all 0.5s;
     transform:scale(1.2);
 }
