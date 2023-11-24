@@ -1,10 +1,12 @@
 import Card from "../Card/Card";
-import style from "./Cards.module.css"
+import style from "./Cards.module.css";
+
+import Slides from "../Slides/Slides"
 
 export default function Cards({ cities, onClose }) {
     return (
         <div className={style.container}>
-            {
+            {/* {
                 cities.length ? (
                     <div className={style.cards}>
                         {
@@ -24,7 +26,9 @@ export default function Cards({ cities, onClose }) {
                         <p></p>
                     </div>
                 )
-            }
+            } */}
+
+            <Slides cities={cities} onClose={onClose}/>
         </div>
     )
 }

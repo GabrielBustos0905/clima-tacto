@@ -5,14 +5,13 @@
     bottom: 0;
 }
 
-.cards {
+/* .cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* grid-auto-columns: auto; */
+    grid-auto-flow: column;
     justify-items: center;
     align-content: center;
     gap: 20px;
-}
+} */
 
 
 

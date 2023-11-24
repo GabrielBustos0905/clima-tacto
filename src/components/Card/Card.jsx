@@ -2,7 +2,7 @@ import style from "./Card.module.css"
 
 
 export default function Card({ max, min, name, img, onClose, id }) {
-    console.log(img)
+    
     return (
         <div className={style.card}>
             <h3>{name}</h3>
