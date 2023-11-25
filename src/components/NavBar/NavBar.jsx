@@ -17,7 +17,7 @@ export default function NavBar({ onSearch }) {
                 <div className={style.containerInput}>
                     <input
                         type="text"
-                        placeholder="Search" 
+                        placeholder="Search Place" 
                         className={style.input} 
                         value={input} 
                         onChange={(e) => setInput(e.target.value)}
