@@ -1,6 +1,7 @@
-import LandingCards from "./LandingCards/LandingCards"
+
 import "./LandingPage.css"
 import Title from "./Title/Title"
+import { Link } from "react-router-dom"
 
 export default function LandingPage() {
     return (
@@ -13,11 +14,9 @@ export default function LandingPage() {
                 <div>
                     <Title />
                 </div>
+                <div></div>
                 <div>
-                    <LandingCards />
-                </div>
-                <div>
-                    <button class="button"></button>
+                    <Link to="/home"><button class="button"></button></Link>
                 </div>
             </div>
         </div>

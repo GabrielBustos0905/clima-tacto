@@ -79,7 +79,7 @@
 }
 
 .button::after {
-    content: "Hover me";
+    content: "Start Now";
     display: flex;
     align-items: center;
     justify-content: center;
