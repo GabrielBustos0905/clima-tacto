@@ -29,6 +29,7 @@ export default function Home() {
                         latitud: recurso.coord.lat,
                         longitud: recurso.coord.lon
                     };
+                    if(ciudad.id == cities.map(c => c.id)) return alert("Ciudad Repetida")
                     setCities(oldCities => [...oldCities, ciudad]);
                 } else {
                     alert("Ciudad no encontrada");
